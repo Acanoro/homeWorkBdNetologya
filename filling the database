@@ -1,0 +1,105 @@
+-- Добавление записей в таблицу Исполнители
+INSERT INTO Artists (name) VALUES
+    ('Artist1 asd'),
+    ('Artist2'),
+    ('Artist3'),
+    ('Artist4 popil'),
+    ('Artist5'),
+    ('Artist6 mimi'),
+    ('Artist7'),
+    ('Artist8 rondal'),
+    ('Artist9 vinda'),
+    ('Artist10');
+
+-- Добавление записей в таблицу Жанры
+INSERT INTO Genres (name) VALUES
+    ('Genre1'),
+    ('Genre2'),
+    ('Genre3'),
+    ('Genre4'),
+    ('Genre5'),
+    ('Genre6'),
+    ('Genre7'),
+    ('Genre8'),
+    ('Genre9'),
+    ('Genre10');
+
+-- Добавление записей в таблицу Альбомы
+INSERT INTO Albums (name, release_year) VALUES
+    ('Album1', 2020),
+    ('Album2', 2018),
+    ('Album3', 2015),
+    ('Album4', 2013),
+    ('Album5', 2020),
+    ('Album6', 2009),
+    ('Album7', 2007),
+    ('Album8', 2019),
+    ('Album9', 2003),
+    ('Album10', 2001);
+
+-- Добавление записей в таблицу Треки
+INSERT INTO Tracks (name, duration, id_album) VALUES
+    ('мойTrack1', 180, 1),
+    ('Track2', 310, 1),
+    ('мойTrack3', 185, 2),
+    ('myTrack4', 200, 2),
+    ('Track5', 190, 3),
+    ('Track7', 195, 4),
+    ('Tracмойk8', 205, 4),
+    ('Track9', 300, 5),
+    ('Tracmyk10', 410, 5);
+
+
+-- Добавление записей в таблицу Сборники
+INSERT INTO Compilations (name, release_year) VALUES
+    ('Compilation1', 2022),
+    ('Compilation2', 2020),
+    ('Compilation3', 2018),
+    ('Compilation4', 2016),
+    ('Compilation5', 2014),
+    ('Compilation6', 2012),
+    ('Compilation7', 2010),
+    ('Compilation8', 2008),
+    ('Compilation9', 2006),
+    ('Compilation10', 2004);
+
+-- Добавление записей в таблицу Связь Исполнителей и Жанров
+INSERT INTO ArtistGenres (id_artist, id_genre) VALUES
+    (1, 1),
+    (1, 2),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (5, 6),
+    (5, 7),
+    (6, 6),
+    (7, 7),
+    (8, 8),
+    (9, 9);
+
+-- Добавление записей в таблицу Связь Исполнителей и Альбомов
+INSERT INTO ArtistAlbums (id_artist, id_album) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (6, 6),
+    (7, 7),
+    (8, 8),
+    (9, 9),
+    (10, 10);
+
+-- Добавление записей в таблицу Связь Сборников и Треков
+INSERT INTO CompilationTracks (id_compilation, id_track) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (6, 6),
+    (7, 7),
+    (8, 8),
+    (9, 9),
+    (10, 10);
